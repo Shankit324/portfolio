@@ -129,7 +129,7 @@ export default function Home() {
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
       <a class="y" style={{ textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center"  }} href="https://github.com/Shankit324/chatroom.git">
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               CHATROOM
             </h2>
@@ -143,7 +143,7 @@ export default function Home() {
         <br /><hr style={{ color: "white", width: "50%" }} /><br />
         <a class="y" style={{ textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center"  }} href="https://github.com/Shankit324/flappy_bird.git">
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               FLAPPY-BIRD GAME
             </h2>
@@ -156,7 +156,7 @@ export default function Home() {
         <br /><hr style={{ color: "white", width: "50%" }} /><br />
         <a class="y" style={{ textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center"  }} href="https://github.com/Shankit324/login.git">
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               LOGIN PAGE
             </h2>
