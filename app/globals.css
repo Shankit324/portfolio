@@ -12,12 +12,12 @@
     overflow-x: hidden;
   }
   #img{
-    display: none;
-  }
-  #about{
-    background-image: url("/mern.png");
+    opacity: 0.4;
+    z-index: 0;
+    width: 100%;
   }
   #part{
+    background-color: "rgba(250, 250, 250, 0.4)";
     z-index: 10;
     width: 100%;
     position: absolute;
@@ -26,16 +26,13 @@
     padding-right: 20px;
   }
   #part1{
+    background-color: "rgba(250, 250, 250, 0.4)";
     z-index: 10;
-    position: absolute;
-    left: 0%;
     width: 100%;
   }
   #part2{
     background-color: "rgba(250, 250, 250, 0.4)";
     z-index: 10;
-    position: absolute;
-    left: 0%;
     width: 100%;
   }
   #hr{
@@ -62,4 +59,17 @@
 
 .underline:hover{
   text-decoration: underline;
+}
+
+#toggle {
+  transition: all 0.5s ease; /* Adjust the timing and easing as needed */
+  display: none; /* Default state */
+}
+
+#toggle.show {
+  display: flex; /* Will trigger the transition when this class is added */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
 }
