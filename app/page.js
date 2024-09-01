@@ -108,7 +108,7 @@ export default function Home() {
       </h2></div><br />
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
       <a class="y" style={{ backgroundColor: "rgba(250, 246, 250, 0.2)", textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center", width: "80%", borderRadius: "10px"  }} href="https://github.com/Shankit324/chatroom.git">
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
+        <div class="y1" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
         <img class="img1" src="/chat.png" style={{ width: "30%", height: "250px", borderRadius: "5px", margin: "15px 15px 15px 15px" }}></img>
           <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
@@ -122,7 +122,7 @@ export default function Home() {
         </a>
         <br />
         <a class="y" style={{ backgroundColor: "rgba(250, 246, 250, 0.2)", textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center", width: "80%", borderRadius: "10px"  }} href="https://github.com/Shankit324/flappy_bird.git">
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+        <div class="y1" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
         <img class="img1" src="/game.webp" style={{ width: "30%", height: "250px", borderRadius: "5px", margin: "15px 15px 15px 15px" }}></img>
           <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
@@ -135,7 +135,7 @@ export default function Home() {
         </div></a>
         <br />
         <a class="y" style={{ backgroundColor: "rgba(250, 246, 250, 0.2)", textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center", width: "80%", borderRadius: "10px"  }} href="https://github.com/Shankit324/login.git">
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
+        <div class="y1" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
         <img class="img1" src="/login.jpg" style={{ width: "30%", height: "250px", borderRadius: "5px", margin: "15px 15px 15px 15px" }}></img>
           <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
