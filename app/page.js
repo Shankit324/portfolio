@@ -31,7 +31,7 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
   useEffect(() => {
     const func = (e) => {
-      setMousePosition({ x: Math.round((e.clientX / window.innerWidth) * 100)%100, y: Math.round((e.clientY / window.innerHeight) * 100)%100 });
+      setMousePosition({ x: e.pageX, y: e.pageY });
     }
     document.addEventListener('mousemove', func);
     return () => {
@@ -39,7 +39,7 @@ export default function Home() {
     }
   }, [])
   return (
-    <main id="main" style={{ backgroundImage: `radial-gradient(600px at ${mousePosition.x}% ${mousePosition.y}%, rgba(29, 78, 216, 0.3), transparent 90%)`, top: 0, left: 0, backgroundColor: "black" }}>
+    <main id="main" style={{ background: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.3), transparent 90%)`, top: 0, left: 0, backgroundColor: "black" }}>
       <Navbar a={about} b={education} c={skills} d={projects} e={contact}/>
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", paddingTop: "150px" }}>
         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: 180, width: 180, border: "5px solid rgba(255, 255, 255, 0.7)", borderRadius: "50%" }}>
@@ -86,26 +86,6 @@ export default function Home() {
             Hello! I'm <b >Shankit Kumar Das</b>, a passionate full-stack web developer dedicated to crafting seamless and visually compelling digital experiences. Proficient in both the front-end and back-end. I love to build websites and enjoy turning ideas into web sites, and I have also worked on some cool web projects, which you can checkout in the projects section.
           </p></div>
       </div><br /><br /><hr id="hr" style={{ width: "80%", color: "white" }} /><br /><br />
-      <div ref={education} id="education" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", justifyItems: "center" }}>
-        <h2 style={{ color: "lightblue", textAlign: "center", fontSize: "50px" }}>
-          EDUCATION
-        </h2><br />
-        <div style={{ backgroundColor: "rgba(185, 205, 245, 0.4)", width: "80%", margin: "5px 5px 5px 5px", borderRadius: "5px" }}>
-          <div style={{ backgroundColor: "rgba(194, 143, 50, 0.4)", borderRadius: "5px 5px 0px 0px", color: "white", fontSize: "20px", fontWeight: "500", padding: "5px 5px 5px 15px" }}>2023 - present</div>
-          <div style={{ backgroundColor: "rgba(194, 143, 50, 0.55)", borderRadius: "0px 0px 5px 5px", color: "white", fontSize: "25px", fontWeight: "500", padding: "5px 5px 5px 15px" }}>Bachelor's Degree</div>
-          <p style={{ color: "darkgrey", textAlign: "left", fontSize: "25px", padding: "5px 5px 5px 15px" }}>Hello! Currently, I am a second-year undergraduate student at the <b>Indian Institute of Technology Kharagpur</b>, West Bengal, pursuing a <b>B.Tech. in Computer Science and Engineering</b>.</p>
-        </div>
-        <div style={{ backgroundColor: "rgba(185, 205, 245, 0.4)", width: "80%", margin: "5px 5px 5px 5px", borderRadius: "5px" }}>
-          <div style={{ backgroundColor: "rgba(194, 143, 50, 0.4)", fontSize: "20px", color: "white", fontWeight: "500", padding: "5px 5px 5px 15px" }}>2021 - 2023</div>
-          <div style={{ backgroundColor: "rgba(194, 143, 50, 0.55)", fontSize: "25px", color: "white", fontWeight: "500", padding: "5px 5px 5px 15px" }}>Higher Secondary</div>
-          <p style={{ color: "darkgrey", textAlign: "left", fontSize: "25px", padding: "5px 5px 5px 15px" }}>I pursued my higher secondary education at <b>Kendriya Vidyalaya No.- 1, Ishapore (KV1, Ishapore)</b>, West Bengal, a CBSE-affiliated, Central Government-funded school. I successfully completed 11th to 12th grades in the <b>Physics, Chemistry, and Mathematics (PCM) stream.</b></p>
-        </div>
-        <div style={{ backgroundColor: "rgba(185, 205, 245, 0.4)", width: "80%", margin: "5px 5px 5px 5px", borderRadius: "5px" }}>
-          <div style={{ backgroundColor: "rgba(194, 143, 50, 0.4)", fontSize: "20px", color: "white", fontWeight: "500", padding: "5px 5px 5px 15px" }}>2016 - 2021</div>
-          <div style={{ backgroundColor: "rgba(194, 143, 50, 0.55)", fontSize: "25px", color: "white", fontWeight: "500", padding: "5px 5px 5px 15px" }}>Upper Primary</div>
-          <p style={{ color: "darkgrey", textAlign: "left", fontSize: "25px", padding: "5px 5px 5px 15px" }}>I pursued my upper primary education at <b>Kendriya Vidyalaya No.- 1, Ishapore (KV1, Ishapore)</b>, West Bengal, a CBSE-affiliated Central Government-funded school. I successfully completed the 6th to 10th grades.</p>
-        </div><br /><br /><hr style={{ width: "80%", color: "white" }} /><br /><br />
-      </div>
       <div ref={skills} id="skills"><h2 style={{ width: "100%", color: "lightblue", textAlign: "center", fontSize: "50px" }}>
         SKILLS
       </h2></div><br />
@@ -127,9 +107,10 @@ export default function Home() {
         PROJECTS
       </h2></div><br />
       <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-      <a class="y" style={{ textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center"  }} href="https://github.com/Shankit324/chatroom.git">
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
+      <a class="y" style={{ backgroundColor: "rgba(250, 246, 250, 0.2)", textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center", width: "80%", borderRadius: "10px"  }} href="https://github.com/Shankit324/chatroom.git">
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
+        <img class="img1" src="/chat.png" style={{ width: "30%", height: "250px", borderRadius: "5px", margin: "15px 15px 15px 15px" }}></img>
+          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               CHATROOM
             </h2>
@@ -137,13 +118,13 @@ export default function Home() {
               A chat room is an online platform that enables users to communicate with each other in real time. Chat rooms are typically hosted on a server with an internet connection, enabling members from around the world to hold conversations about various topics.
             </p>
           </div>
-          <img class="img1" src="/chat.png" style={{ width: "30%", height: "250px", borderRadius: "5px" }}></img>
         </div>
         </a>
-        <br /><hr style={{ color: "white", width: "50%" }} /><br />
-        <a class="y" style={{ textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center"  }} href="https://github.com/Shankit324/flappy_bird.git">
+        <br />
+        <a class="y" style={{ backgroundColor: "rgba(250, 246, 250, 0.2)", textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center", width: "80%", borderRadius: "10px"  }} href="https://github.com/Shankit324/flappy_bird.git">
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
+        <img class="img1" src="/game.webp" style={{ width: "30%", height: "250px", borderRadius: "5px", margin: "15px 15px 15px 15px" }}></img>
+          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               FLAPPY-BIRD GAME
             </h2>
@@ -151,12 +132,12 @@ export default function Home() {
               Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights.
             </p>
           </div>
-          <img class="img1" src="/game.webp" style={{ width: "30%", height: "250px", borderRadius: "5px" }}></img>
         </div></a>
-        <br /><hr style={{ color: "white", width: "50%" }} /><br />
-        <a class="y" style={{ textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center"  }} href="https://github.com/Shankit324/login.git">
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "space-between", alignItems: "center" }}>
+        <br />
+        <a class="y" style={{ backgroundColor: "rgba(250, 246, 250, 0.2)", textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center", width: "80%", borderRadius: "10px"  }} href="https://github.com/Shankit324/login.git">
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
+        <img class="img1" src="/login.jpg" style={{ width: "30%", height: "250px", borderRadius: "5px", margin: "15px 15px 15px 15px" }}></img>
+          <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               LOGIN PAGE
             </h2>
@@ -164,7 +145,6 @@ export default function Home() {
               A login form utilizes the credentials of a user, in order to authenticate their access. It generally consists of the typical username or email and password. But more fields can be added to improve the site's security.
             </p>
           </div>
-          <img class="img1" src="/login.jpg" style={{ width: "30%", height: "250px", borderRadius: "5px" }}></img>
         </div>
         </a><br /><br /><hr style={{ color: "white", width: "80%" }} /><br />
         </div>
