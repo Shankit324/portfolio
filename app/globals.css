@@ -52,11 +52,13 @@
     margin-top: 10px;
   }
   .y{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
   .y{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
