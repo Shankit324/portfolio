@@ -28,11 +28,15 @@
   #part1{
     background-color: "rgba(250, 250, 250, 0.4)";
     z-index: 10;
+    position: absolute;
+    left: 0%;
     width: 100%;
   }
   #part2{
     background-color: "rgba(250, 250, 250, 0.4)";
     z-index: 10;
+    position: absolute;
+    left: 0%;
     width: 100%;
   }
   #hr{
