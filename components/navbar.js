@@ -9,16 +9,20 @@ const Navbar = (props) => {
     const [i, setI] = useState(0);
     const handle1 = (e) => {
         e.preventDefault();
-        document.getElementById('toggle').style.display = "flex";
-        document.getElementById('toggle').style.flexDirection = "column";
-        document.getElementById('toggle').style.justifyContent = "center";
-        document.getElementById('toggle').style.alignItems = "center";
-        setI(1);
+        setTimeout(() => {
+            document.getElementById('toggle').style.display = "flex";
+            document.getElementById('toggle').style.flexDirection = "column";
+            document.getElementById('toggle').style.justifyContent = "center";
+            document.getElementById('toggle').style.alignItems = "center";
+            setI(1);
+        }, 300)
     }
     const handle2 = (e) => {
         e.preventDefault();
-        document.getElementById('toggle').style.display = "none";
-        setI(0);
+        setTimeout(() => {
+            document.getElementById('toggle').style.display = "none";
+            setI(0);
+        }, 300)
     }
     return (
         <footer style={{ position: "absolute", top: 0, right: 0, height: "70px", width: "100%", display: "flex", flexDirection: "column", alignItems: "right", justifyContent: "centre", zIndex: 20, opacity: 0.8 }}>
@@ -40,22 +44,13 @@ const Navbar = (props) => {
                 }} style={{ color: "white", textAlign: "center", fontWeight: "bold", fontSize: "20px", cursor: "pointer" }}>About</span>
                 <hr style={{ width: "80%" }} />
                 <span onClick={(e) => {
-                    props.b.current?.scrollIntoView({
-                        behavior: 'smooth',
-                    })
-                    e.preventDefault();
-                    document.getElementById('toggle').style.display = "none";
-                    setI(0);
-                }} style={{ color: "white", textAlign: "center", fontWeight: "bold", fontSize: "20px", cursor: "pointer" }}>Education Details</span>
-                <hr style={{ width: "80%" }} />
-                <span onClick={(e) => {
                     props.c.current?.scrollIntoView({
                         behavior: 'smooth',
                     })
                     e.preventDefault();
                     document.getElementById('toggle').style.display = "none";
                     setI(0);
-                }} style={{ color: "white", textAlign: "center", fontWeight: "bold", fontSize: "20px", cursor: "pointer" }}>Skill</span>
+                }} style={{ color: "white", textAlign: "center", fontWeight: "bold", fontSize: "20px", cursor: "pointer" }}>Skills</span>
                 <hr style={{ width: "80%" }} />
                 <span onClick={(e) => {
                     props.d.current?.scrollIntoView({
