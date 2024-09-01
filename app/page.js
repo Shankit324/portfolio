@@ -82,7 +82,7 @@ export default function Home() {
         <div id="part"><h2 id="part1" style={{ width: "100%", color: "lightblue", textAlign: "center", fontSize: "50px" }}>
           LET ME INTRODUCE MYSELF
         </h2><br />
-          <p id="part2" style={{ width: "70%", color: "#ffffff", textAlign: "left", fontSize: "20px", margin: "0px 10px 0px 10px" }}>
+          <p id="part2" style={{ width: "70%", color: "#ffffff", textAlign: "left", fontSize: "20px", margin: "0px 10px 0px 10px", overflow: "hidden" }}>
             Hello! I'm <b >Shankit Kumar Das</b>, a passionate full-stack web developer dedicated to crafting seamless and visually compelling digital experiences. Proficient in both the front-end and back-end. I love to build websites and enjoy turning ideas into web sites, and I have also worked on some cool web projects, which you can checkout in the projects section.
           </p></div>
       </div><br /><br /><hr id="hr" style={{ width: "80%", color: "white" }} /><br /><br />
