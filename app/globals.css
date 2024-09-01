@@ -26,15 +26,16 @@
     padding-right: 20px;
   }
   #part1{
-    background-color: "rgba(250, 250, 250, 0.4)";
+    background-color: rgba(250, 250, 250, 0.4);
     z-index: 10;
     width: 100%;
   }
   #part2{
-    background-color: "rgba(250, 250, 250, 0.4)";
+    background-color: rgba(250, 250, 250, 0.4);
     z-index: 10;
-    width: 100%;
+    width: 80%;
     overflow: hidden;
+    text-align: center;
   }
   #hr{
     z-index: 10;
