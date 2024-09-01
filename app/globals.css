@@ -19,6 +19,7 @@
   #part1{
     z-index: 10;
     width: 100%;
+    postion: absolute;
   }
   #part2{
     z-index: 10;
