@@ -51,6 +51,10 @@
   #t{
     margin-top: 10px;
   }
+  #y{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .dark{
