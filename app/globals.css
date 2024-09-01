@@ -17,18 +17,18 @@
     width: 100%;
   }
   #part1{
-    z-index: 10;
+    z-index: 100;
     width: 100%;
     postion: absolute;
   }
   #part2{
-    z-index: 10;
+    z-index: 100;
     width: 100%;
     overflow: hidden;
     text-align: center;
   }
   #hr{
-    z-index: 10;
+    z-index: 100;
     margin-top: 70px;
   }
 }
