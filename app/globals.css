@@ -72,16 +72,3 @@
 .underline:hover{
   text-decoration: underline overline;
 }
-
-#toggle {
-  transition: all 0.5s ease; /* Adjust the timing and easing as needed */
-  display: none; /* Default state */
-}
-
-#toggle.show {
-  display: flex; /* Will trigger the transition when this class is added */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-}
