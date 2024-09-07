@@ -52,14 +52,14 @@
     margin-top: 10px;
   }
   .y1{
-    flex-direction: column;
+    flex-direction: row;
   }
   .img1{
     width: 80%;
     height: 50%;
   }
   .div{
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
