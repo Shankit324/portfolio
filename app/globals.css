@@ -59,7 +59,7 @@
     height: 50%;
   }
   .div{
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
