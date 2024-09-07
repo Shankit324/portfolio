@@ -39,10 +39,31 @@
     z-index: 10;
     margin-top: 70px;
   }
+  #t{
+    margin-top: 10px;
+  }
+  .y{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .y1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .img1{
+    width: 80%;
+  }
+  .div{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 700px) {
-  #main{
+/*   #main{
     overflow-x: hidden;
   }
   #t{
@@ -65,7 +86,7 @@
   }
   .div{
     width: 80%;
-  }
+  } */
 }
 
 .dark{
