@@ -114,7 +114,7 @@ export default function Home() {
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               CHATROOM
             </h2>
-            <p style={{ color: "white", textAlign: "left" }}>
+            <p class="p" style={{ color: "white", textAlign: "left" }}>
               A chat room is an online platform that enables users to communicate with each other in real time. Chat rooms are typically hosted on a server with an internet connection, enabling members from around the world to hold conversations about various topics.
             </p>
           </div>
@@ -128,20 +128,20 @@ export default function Home() {
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               FLAPPY-BIRD GAME
             </h2>
-            <p style={{ color: "white", textAlign: "left" }}>
+            <p class="p" style={{ color: "white", textAlign: "left" }}>
               Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights.
             </p>
           </div>
         </div></a>
         <br />
         <a class="y" style={{ backgroundColor: "rgba(250, 246, 250, 0.2)", textDecoration: "none", color: "black",  display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", justifyItems: "center", width: "80%", borderRadius: "10px"  }} href="https://github.com/Shankit324/login.git">
-        <div class="y1" style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
+        <div class="y1" style={{ width: "100%", display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", margin: "5px 5px 5px 5px" }}>
         <img class="img1" src="/login.jpg" style={{ width: "30%", height: "250px", borderRadius: "5px", margin: "15px 15px 15px 15px" }}></img>
           <div style={{ width: "40%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
             <h2 class="underline" style={{ color: "#c18f32", fontSize: "25px", fontWeight: "500" }}>
               LOGIN PAGE
             </h2>
-            <p style={{ color: "white", textAlign: "left" }}>
+            <p class="p" style={{ color: "white", textAlign: "left" }}>
               A login form utilizes the credentials of a user, in order to authenticate their access. It generally consists of the typical username or email and password. But more fields can be added to improve the site's security.
             </p>
           </div>
