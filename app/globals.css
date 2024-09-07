@@ -57,6 +57,9 @@
   .img1{
     width: 80%;
   }
+  .div{
+    flex-direction: row;
+  }
 }
 
 .dark{
