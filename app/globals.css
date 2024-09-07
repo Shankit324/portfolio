@@ -61,6 +61,12 @@
   .div{
     flex-direction: row;
   }
+  p{
+    width: 80%;
+  }
+  .underline{
+    width: 80%;
+  }
 }
 
 .dark{
