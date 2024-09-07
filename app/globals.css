@@ -51,6 +51,9 @@
   #t{
     margin-top: 10px;
   }
+  .y1{
+    flex-direction: row;
+  }
 }
 
 .dark{
