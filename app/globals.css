@@ -50,9 +50,13 @@
   }
   .y1{
     flex-direction: column-reverse;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
   .y{
     flex-direction: column-reverse;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
   }
   .p{
     width: 200%;
