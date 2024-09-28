@@ -72,9 +72,7 @@
     opacity: 0.3;
   }
   .underline{
-    z-index: 20;
-    width: 200%;
-    text-align: center;
+    text-decoration: underline overline;
   }
 }
 
