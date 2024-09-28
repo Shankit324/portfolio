@@ -61,9 +61,7 @@
   }
   .p{
     width: 200%;
-    z-index: 5;
     position: relative;
-    padding: 0px 0px 20px 0px;
   }
   .img1{
     width: 100%;
