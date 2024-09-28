@@ -71,6 +71,8 @@
     position: absolute;
     opacity: 0.3;
   }
+  .underline{
+    z-index: 20;
 }
 
 .dark{
