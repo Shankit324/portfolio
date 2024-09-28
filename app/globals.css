@@ -74,6 +74,7 @@
     opacity: 0.3;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    overflow-y: hidden;
   }
   .underline{
     z-index: 20;
