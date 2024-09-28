@@ -57,6 +57,7 @@
     flex-direction: column-reverse;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    overflow-y: hidden;
   }
   .p{
     width: 200%;
