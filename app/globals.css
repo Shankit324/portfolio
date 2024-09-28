@@ -73,6 +73,7 @@
   }
   .underline{
     z-index: 20;
+    position: absolute;
 }
 
 .dark{
